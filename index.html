@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Transformations</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="matrixInput">
+       <input type="number" id="m1" placeholder="0" step="0.01" value="1"/>
+       <input type="number" id="m2" placeholder="0" step="0.01" value="0"/>
+       <input type="number" id="m3" placeholder="0" step="0.01" value="0"/><br/>
+       <input type="number" id="m4" placeholder="0" step="0.01" value="0"/>
+       <input type="number" id="m5" placeholder="0" step="0.01" value="1"/>
+       <input type="number" id="m6" placeholder="0" step="0.01" value="0"/><br/>
+       <input type="number" id="m7" placeholder="0" step="0.01" value="0"/>
+       <input type="number" id="m8" placeholder="0" step="0.01" value="0"/>
+       <input type="number" id="m9" placeholder="0" step="0.01" value="1"/><br/>
+       <button id="TransformationButton" onclick="updateTransformation()">Apply Transformation</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>

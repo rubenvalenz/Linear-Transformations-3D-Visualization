@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#matrixInput {
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0; /* Set border-radius to 0 for square corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#matrixInput input {
+    width: 50px;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0; /* Set border-radius to 0 for square corners */
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Disable arrow increment feature for number inputs */
+#matrixInput input[type="number"]::-webkit-inner-spin-button,
+#matrixInput input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#matrixInput button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0; /* Set border-radius to 0 for square corners */
+    cursor: pointer;
+}
+
+#matrixInput button:hover {
+    background-color: #45a049;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    #matrixInput {
+        position: static;
+        width: 80%;
+        margin: 20px auto;
+    }
+}
